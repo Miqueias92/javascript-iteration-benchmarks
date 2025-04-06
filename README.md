@@ -7,7 +7,6 @@ Este repositório contém testes de desempenho que comparam diferentes métodos 
 <details>
   <summary><strong>Teste 1: Iteração Simples com 10.000 Elementos</strong></summary>
 
----
 > Objetivo: processar uma lista de 10.000 números e criar objetos correspondentes.​
 
 > Como executar:
@@ -40,13 +39,10 @@ Os testes foram executados três vezes, e os tempos médios registrados para cad
 Observa-se que o loop for...in apresentou o melhor desempenho na maioria dos testes, seguido pelo for...of. É importante notar que os tempos podem variar dependendo do ambiente de execução e que diferenças sutis podem não ser significativas em aplicações reais.
 </details>
 
----
 
 <details>
   <summary><strong>Teste 2: Iteração com Lista de Objetos Aninhados</strong></summary>
 
-
----
 > Objetivo: Medir o desempenho de diferentes métodos de iteração em um cenário com dados aninhados. Cada elemento da lista principal (concessionárias) contém uma lista interna de 400 carros. Neste teste, há apenas **1** elemento na lista principal, o que nos permite isolar o custo da iteração interna sobre os carros.  
 >
 > ❗ O foco aqui é **apenas desempenho** — não legibilidade ou boas práticas de código.
@@ -88,6 +84,9 @@ O baixo número de elementos na lista externa ajuda a focar apenas no custo da i
 
 Diferenças pequenas como essas são comuns em microbenchmarks e podem variar conforme o ambiente.
 </details>
+
+
+---
 
 
 Após a realização dos testes comparativos entre os diferentes métodos de iteração em JavaScript, podemos concluir o seguinte:​
